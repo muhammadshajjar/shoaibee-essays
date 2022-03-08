@@ -1,0 +1,103 @@
+.orders-info {
+  margin-top: 50px;
+}
+.orders-info h2 {
+  font-size: 28px;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 8px;
+}
+
+.order-form {
+  justify-content: space-between;
+}
+
+.left {
+  /* border: 2px solid yellow; */
+  width: 48%;
+}
+.right {
+  /* border: 2px solid yellow; */
+  width: 48%;
+}
+
+/* To remove arrow from select fields */
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+.form-col label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  font-family: var(--ff-poppins);
+  padding: 12.5px 8px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  color: gray;
+}
+.input-txt {
+  padding: 12px 8px;
+}
+
+.pricing {
+  justify-content: space-evenly;
+  color: var(--color-primary);
+  font-size: 18px;
+  margin-top: 20px;
+}
+.pricing h5 {
+  margin-bottom: 10px;
+}
+.textarea-container {
+  margin-top: 30px;
+}
+.upload-documents {
+  font-weight: bold;
+  margin: 30px auto;
+}
+.upload-desc {
+  font-weight: 400;
+  font-size: 14px;
+}
+.upload-imp {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+.orders-info h2 {
+  margin-bottom: 20px;
+}
+.personal-detail-con {
+  margin-bottom: 40px;
+}
+
+.submit-btn {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .order-form {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .pricing {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}

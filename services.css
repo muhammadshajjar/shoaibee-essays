@@ -1,0 +1,136 @@
+.headings {
+  text-align: center;
+
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.headings h3 {
+  font-size: 24px;
+  color: var(--color-primary);
+}
+.headings h2 {
+  padding: 13px;
+  font-size: 38px;
+}
+.headings span {
+  border-bottom: 3px solid var(--color-primary);
+}
+.icon-con {
+  border: 2px solid var(--color-primary);
+  line-height: 1;
+  border-radius: 10px;
+
+  display: inline-block;
+}
+.icon-con img {
+  height: 60px;
+  padding: 12px;
+}
+
+.services-content {
+  flex-direction: column;
+  margin: 100px auto;
+  width: 80%;
+}
+.services-content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 20px 0 13px 0;
+}
+.services-col {
+  justify-content: space-between;
+}
+.services-con {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.more-services-title {
+  max-width: 700px;
+}
+.more-services-title p {
+  line-height: 1.8;
+}
+
+.more-services-title h2 {
+  font-size: 35px;
+  padding-left: 5px;
+  border-left: 4px solid var(--color-primary);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  margin: 40px 0;
+  max-width: 700px;
+  justify-content: space-between;
+}
+
+.services-list li {
+  margin-bottom: 13px;
+}
+.services-list i {
+  color: var(--color-primary);
+}
+.more-services__content {
+  margin-left: 120px;
+}
+
+.other-services p {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 600px;
+}
+.services-list a {
+  color: var(--color-black);
+  padding-bottom: 4px;
+  border-bottom: 1px solid #524b4b38;
+}
+.services-list a:hover {
+  border-color: var(--color-primary);
+}
+.services-list--small {
+  max-width: 594px;
+}
+.more-services {
+  background-color: #f3f3f3;
+  padding: 100px 0;
+  background-image: url(./images/img_ourservices-books.webp);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: #100803;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .services-content {
+    margin: 100px auto;
+  }
+}
+@media screen and (max-width: 840px) {
+  .services-col {
+    flex-direction: column;
+  }
+  .services-con {
+    width: 100%;
+  }
+  .more-services__content {
+    margin-left: auto;
+  }
+  .services-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .headings h2 {
+    font-size: 24px;
+  }
+  .more-services {
+    background-image: url(./images/bg-books-mobile.webp);
+  }
+  .services-content {
+    margin: 50px auto;
+  }
+}

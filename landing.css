@@ -1,0 +1,121 @@
+.landing-section {
+  /* border: 2px solid yellow; */
+  background-image: url(./images/bookblock-JPHPdqZrB3I-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  padding: 180px 0 100px 0;
+}
+
+.landing-content {
+  /* border: 2px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.landing__slogon {
+  /* border: 2px solid yellow; */
+  width: 42%;
+  color: var(--color-black);
+}
+.landing__slogon h5 {
+  font-size: 18px;
+  opacity: 0.76;
+  border-left: 5px solid var(--color-primary);
+  padding-left: 10px;
+}
+.landing__slogon p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+.landing__slogon span {
+  background-color: var(--color-primary);
+}
+.slogon__title {
+  font-size: 55px;
+  letter-spacing: 0.2px;
+}
+.landig__form {
+  /* border: 1px solid var(--color-black); */
+  width: 33%;
+  margin-right: 100px;
+  border-radius: 6px;
+  padding: 55px 45px 45px 45px;
+  background-color: rgba(195, 195, 195, 0.26);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.form-inputs {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: var(--ff-poppins);
+  border-color: var(--color-black);
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.form-inputs:hover {
+  border: 2px solid var(--color-primary);
+}
+
+.pricing {
+  justify-content: space-around;
+}
+
+.compension {
+  color: gray;
+  padding-left: 5px;
+  border-left: 4px solid var(--color-primary);
+  margin-bottom: 12px;
+}
+
+/* .compension span {
+  background-color: var(--color-primary);
+  color: black;
+} */
+
+.form__btn {
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1000px) {
+  .slogon__title {
+    font-size: 45px;
+  }
+  .landig__form {
+    margin-right: 0;
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .landing-content {
+    flex-direction: column;
+  }
+  .landig__form {
+    width: 80%;
+  }
+
+  .landing__slogon {
+    width: 100%;
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landig__form {
+    width: 100%;
+  }
+  .pricing {
+    flex-direction: column;
+  }
+  .pricing p:not(:first-child) {
+    margin-top: 10px;
+  }
+}

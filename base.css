@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-Montserrat: "Montserrat", sans-serif;
+  --color-primary: #fdb827;
+  --color-white: #fff;
+  --color-black: #100803;
+  --color-bg: #f8f8f8;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--ff-poppins);
+  font-weight: 400;
+  color: var(--color-grey);
+  font-size: 15px;
+}
+
+.container {
+  max-width: min(90%, 1280px);
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.flex {
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* fixed button at the bottom of window */
+
+.fixedButton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
+}
+.fixedButton__container {
+  height: 60px;
+  width: 60px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(74 76 78 / 45%) 0px 3px 15px 0px;
+}
+
+.bakground-with-title {
+  height: 40vh;
+  background-color: rgb(17, 16, 16);
+}
+.bakground-with-title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  font-size: 46px;
+  letter-spacing: 1px;
+}
+.bakground-with-title span {
+  color: black;
+  background-color: var(--color-primary);
+  margin-left: 10px;
+}
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+  .bakground-with-title {
+    height: 30vh;
+  }
+  .bakground-with-title h1 {
+    font-size: 30px;
+  }
+}
